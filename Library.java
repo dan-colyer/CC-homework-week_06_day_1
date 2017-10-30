@@ -15,4 +15,14 @@ class Library {
     return this.stock.length;
   }
 
+  public int stockCount() {
+    int count = 0;
+    for(Book book : stock) {
+      if (book != null) {
+        count++;
+      }
+    }
+    return count;
+  }
+
 }
