@@ -12,26 +12,22 @@ public class LibraryTest {
     this.book = new Book();
   }
 
+// Test 1
   @Test
   public void hasName() {
     String name = this.library.getName();
     assertEquals("Ed Lib", name);
   }
 
+// Test 2
+  @Test
+  public void hasMaxStock() {
+    int num = this.library.getMaxStock();
+    assertEquals(10, num);
+  }
 }
 
 
-// @Before
-// public void before() {
-//   this.bear = new Bear("Baloo", 25, 95.50);
-//   this.salmon = new Salmon();
-// }
-//
-// @Test
-// public void hasName() {
-//   String name = this.bear.getName();
-//   assertEquals("Baloo", name);
-// }
 
 // Create your own class with an internal collection of a different class. It should have methods for count, add, isFull etc. Remember to write tests for your classes!
 //

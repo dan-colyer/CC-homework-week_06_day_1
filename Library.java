@@ -11,4 +11,8 @@ class Library {
     return this.name;
   }
 
+  public int getMaxStock() {
+    return this.stock.length;
+  }
+
 }
