@@ -38,12 +38,3 @@ class Library {
   }
 
 }
-
-
-// public void eat(Salmon salmon) {
-//   if(isBellyFull()) {
-//     return;
-//   }
-//   int foodCount = foodCount();
-//   belly[foodCount] = salmon;
-// }
