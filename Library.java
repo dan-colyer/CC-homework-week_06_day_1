@@ -30,7 +30,13 @@ class Library {
     stock[stockCount] = book;
   }
 
+  public boolean isStockFull() {
+    return stockCount() == stockCount();
+  }
+
 }
+
+
 // public void eat(Salmon salmon) {
 //   if(isBellyFull()) {
 //     return;
