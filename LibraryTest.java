@@ -8,11 +8,15 @@ public class LibraryTest {
 
   @Before
   public void before() {
-    this.library = new Library("Ed Lib");
+    this.library = new Library("Ed Lib", 10);
     this.book = new Book();
   }
 
-  
+  @Test
+  public void hasName() {
+    String name = this.library.getName();
+    assertEquals("Ed Lib", name);
+  }
 
 }
 
