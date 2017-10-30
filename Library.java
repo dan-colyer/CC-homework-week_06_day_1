@@ -25,4 +25,16 @@ class Library {
     return count;
   }
 
+  public void addBook(Book book) {
+    int stockCount = stockCount();
+    stock[stockCount] = book;
+  }
+
 }
+// public void eat(Salmon salmon) {
+//   if(isBellyFull()) {
+//     return;
+//   }
+//   int foodCount = foodCount();
+//   belly[foodCount] = salmon;
+// }
