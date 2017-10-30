@@ -26,12 +26,15 @@ class Library {
   }
 
   public void addBook(Book book) {
+    if(isStockFull()) {
+      return;
+    }
     int stockCount = stockCount();
     stock[stockCount] = book;
   }
 
   public boolean isStockFull() {
-    return stockCount() == stockCount();
+    return stockCount() == this.stock.length;
   }
 
 }

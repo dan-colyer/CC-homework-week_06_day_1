@@ -47,14 +47,16 @@ public class LibraryTest {
     }
     assertEquals(true, library.isStockFull());
   }
+
+// Test 6
+  @Test
+  public void cannotAddBookWhenStockFull() {
+    for (int i = 0; i < 20 ; i++ ) {
+      library.addBook(book);
+    }
+  assertEquals(10, library.stockCount());
+  }
 }
-// @Test
-// public void bellyIsFull() {
-//   for(int i = 0; i < 5; i++) {
-//     bear.eat(salmon);
-//   }
-// assertEquals(true, bear.isBellyFull());
-// }
 
 // Create your own class with an internal collection of a different class. It should have methods for count, add, isFull etc. Remember to write tests for your classes!
 //
